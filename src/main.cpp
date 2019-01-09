@@ -7,7 +7,7 @@
 #include <Hash.h>
 #include  "miserver.h"
 
-
+//Se inicializa web socket en el puerto 81
 WebSocketsServer webSocket = WebSocketsServer(81);
 
 
@@ -83,13 +83,18 @@ long timer1 = 0;
 void sendInfoTemp(){
             
     long a = millis() - timer1;
+    //determina cuando pase un segundo sin parar el resto de procesos //programacion no bloqueante
     
     if(a > 1000 ){
+    
+        //extrae los valores de la humendad y temperatura
         float h = dht.getHumidity();
         float t = dht.getTemperature();   
         
+        //concadena un string con los datos de temperatura y humedad
         webSocket.broadcastTXT(String(h) + "|" + String(t));
         
+        //puntero de tiempo
         timer1 = millis();
     }
 
@@ -98,11 +103,10 @@ void sendInfoTemp(){
 
 void loop(){
     
-  
-  
-  webSocket.loop();
-    
+  //funcion que actualiza el sevidor websocket
+  webSocket.loop();  
+  //funcion que envia los datos al cliente  cada segundo
   sendInfoTemp();
-
-   server.handleClient();     
+  //Servidor de pagina web donde se visualizan los datos    
+  server.handleClient();     
 }
