@@ -8,7 +8,7 @@
 
 ###### 2.-instalar platformio
 >Precionar inicio escribir cmd y abrir, en la consola escribir
->'pip install platformio -U'
+>pip install platformio -U
 
 
 
