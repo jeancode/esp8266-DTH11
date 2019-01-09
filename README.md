@@ -1,8 +1,8 @@
 # esp8266-DTH11
 
-##Intrucciones
+## Intrucciones
 
-######1.-instalar python
+###### 1.-instalar python
 descargar he instalar python
 
 
