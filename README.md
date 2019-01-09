@@ -21,7 +21,7 @@
 ###### 7.- Compilar y subir a la nodencu conectada junto con el sensor en el pin D0 que se espesifica en el codigo y escribir:
 > platformio run -t upload && platformio device monitor
 
-###### 8
+###### 8.- Entrar al Navegador
 > ver el puerto ip de salida quese mostrara en la consola despues de compilarse y subirse el codigo entrar desde cualquier navegador dentro de la misma red local
 
 
