@@ -53,6 +53,7 @@ DHT dht;
 void setup(){
     
     Serial.begin(9600);
+    //se inicializa el sensor en el puerto d0
     dht.setup(D0); 
     
     WiFi.begin("Nombre de tu red", "Password de tu red");
