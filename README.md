@@ -2,14 +2,15 @@
 
 ## Intrucciones
 
-###### 1.-instalar python
+###### 1.- Instalar python
 >descargar he instalar python
 >https://www.python.org/downloads/
 
-###### 2.-instalar platformio
->Precionar inicio escribir cmd y abrir, en la consola escribir 
-escribir:
->pip install platformio -U
+###### 2.- Abrir cnd
+>precionar inicio +r o buscar cmd y abrir
+
+###### 3.- Escribir 
+> pip install platformio -U
 
 
 
