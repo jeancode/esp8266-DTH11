@@ -7,7 +7,7 @@
 >https://www.python.org/downloads/
 
 ###### 2.-instalar platformio
->Precionar inicio escribir cmd y abrir, en la consola escribir \n
+>Precionar inicio escribir cmd y abrir, en la consola escribir esto \n
 >pip install platformio -U
 
 
