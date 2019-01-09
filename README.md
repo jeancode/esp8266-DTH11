@@ -14,8 +14,8 @@
 
 ###### 4.- Entrar a la carpeta por medio de cmd_
 > Entrar a la carpeta del proyecto justo donde se encuentra platformio.ini pueden ver una imagen.
-
 ![Captura1](cmd.PNG)
+> escribir cd y copiar y pegar la ruta de la carpeta del proyecto y poner enter
 ![Captura1](cmd2.PNG)
 
 ###### 5.- Instalar libreria websocket
@@ -24,10 +24,10 @@
 ##### 6.- Instalar libreria DTH11
 > platformio lib install 1671
 
-###### 7.- Editar el codigo ./src/main.cpp_
->Editar el espesificar el puerto de salida ademas de  el nombre y password de tu red en la linea 59 y el puerto del sensor en la linea 57
+###### 7.- Editar el codigo ./src/main.cpp para configurar_
+>Editar y espesificar el puerto de datos del dth11 ademas de  el nombre y password de tu red en la linea 59 y el puerto del sensor en la linea 57 
 
-###### 8.- Compilar y subir a la nodencu conectada junto con el sensor en el pin D0 que se espesifica en el codigo y escribir:
+###### 8.- Compilar y subir a la nodencu conectada junto con el sensor en el pin D0 que se Específica en el codigo y escribir:
 > platformio run -t upload && platformio device monitor
 
 ###### 9.- Entrar al Navegador
